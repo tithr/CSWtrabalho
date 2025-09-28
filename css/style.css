@@ -1,0 +1,296 @@
+/* Reset Básico e Configurações Globais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto Mono', monospace;
+    background-color: #000000;
+    color: #f0f0f0;
+    line-height: 1.6;
+}
+
+/* Container Principal */
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+/* Barra de Navegação */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #1a1a1a;
+    border-bottom: 1px solid #333;
+}
+
+.navbar .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #5E5E5E;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: #f0f0f0;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-links a:hover, .nav-links a.active {
+    background-color: #5E5E5E;
+    color: #ffffff;
+}
+
+/* Botão Genérico */
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #5E5E5E;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn:hover {
+    background-color: #4a4a4a;
+    transform: translateY(-2px);
+}
+
+/* Seção Hero (Home) */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    padding: 4rem 0;
+    flex-wrap: wrap;
+}
+
+.hero-text {
+    flex: 1;
+    max-width: 600px;
+}
+
+.hero-text h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: #5E5E5E;
+}
+
+.hero-text p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.hero-image {
+    flex: 1;
+    text-align: center;
+    max-width: 400px;
+}
+
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+    border: 5px solid #5E5E5E;
+}
+
+
+/* Seções de Conteúdo */
+.content-section {
+    padding: 3rem 0;
+    border-bottom: 1px solid #333;
+}
+
+.content-section h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #5E5E5E;
+}
+
+.content-section ul {
+    list-style-position: inside;
+    padding-left: 20px;
+}
+
+.content-section ul li {
+    margin-bottom: 0.5rem;
+}
+
+.page-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #5E5E5E;
+}
+
+/* Seção de Mídia */
+.media-section .media-container {
+    display: flex;
+    gap: 2rem;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+}
+
+.media-item {
+    flex: 1;
+    min-width: 300px;
+}
+.media-item h3 {
+    margin-bottom: 1rem;
+}
+.media-item audio, .media-item iframe {
+    width: 100%;
+    border-radius: 8px;
+    margin-top: 1rem;
+}
+
+/* Página de Currículo */
+.curriculo-section {
+    margin-bottom: 2rem;
+}
+.curriculo-section h3 {
+    color: #5E5E5E;
+    border-bottom: 2px solid #5E5E5E;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+/* Página GitHub */
+.text-center { text-align: center; }
+.github-card {
+    max-width: 500px;
+    margin: 2rem auto 0;
+    padding: 2rem;
+    background-color: #1a1a1a;
+    border-radius: 8px;
+    border: 1px solid #333;
+}
+.github-logo {
+    width: 80px;
+    margin-bottom: 1rem;
+}
+
+/* Tabela de Serviços */
+.tabela-precos table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 2rem;
+}
+
+.tabela-precos th, .tabela-precos td {
+    padding: 1rem;
+    text-align: left;
+    border: 1px solid #333;
+}
+
+.tabela-precos thead {
+    background-color: #5E5E5E;
+    color: #ffffff;
+}
+
+.tabela-precos tbody tr:nth-child(even) {
+    background-color: #1a1a1a;
+}
+.cta-servicos {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+/* Formulário de Contato */
+.contact-form {
+    max-width: 700px;
+    margin: 2rem auto;
+    background: #1a1a1a;
+    padding: 2rem;
+    border-radius: 8px;
+}
+.form-group {
+    margin-bottom: 1.5rem;
+}
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+.form-group input[type="text"],
+.form-group input[type="tel"],
+.form-group input[type="email"],
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border-radius: 5px;
+    border: 1px solid #555;
+    background-color: #333;
+    color: #f0f0f0;
+    font-family: 'Roboto Mono', monospace;
+}
+.form-group input[type="radio"],
+.form-group input[type="checkbox"] {
+    margin-right: 0.5rem;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 2rem;
+    margin-top: 2rem;
+    background-color: #1a1a1a;
+    border-top: 1px solid #333;
+}
+
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+    .nav-links li {
+        margin-left: 0;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 0.5rem;
+    }
+
+    .nav-links a {
+        display: block;
+        padding: 10px;
+    }
+
+    .hero {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .hero-text h1 {
+        font-size: 2.5rem;
+    }
+}
+
