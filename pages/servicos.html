@@ -17,7 +17,7 @@
                 <li><a href="../index.html">Home</a></li>
                 <li><a href="curriculo.html">Currículo</a></li>
                 <li><a href="github.html">GitHub</a></li>
-                <li><a href="servicos.html">Serviços</a></li>
+                <li><a href="servicos.html" class="active">Serviços</a></li>
                 <li><a href="contato.html">Contato</a></li>
             </ul>
         </nav>
@@ -25,52 +25,92 @@
 
     <main class="container">
         <section id="servicos-page" class="content-section">
-            <h1 class="page-title">Serviços de Desenvolvimento Web</h1>
-            <p>Ofereço soluções personalizadas para a criação de sites, desde páginas simples até sistemas complexos, para diversos nichos como restaurantes, academias, livrarias e muito mais.</p>
+            <h1 class="page-title">Planos de Desenvolvimento Web</h1>
+            <p class="text-center" style="max-width: 700px; margin: 0 auto 3rem auto;">
+                Escolha o plano que melhor se adapta às suas necessidades. Todos os projetos são entregues com design responsivo e otimização para performance.
+            </p>
             
             <div class="tabela-precos">
                 <table>
                     <thead>
                         <tr>
-                            <th>Tipo de Serviço</th>
-                            <th>Descrição</th>
-                            <th>Valores (A partir de)</th>
+                            <th>Plano</th>
+                            <th>Recursos Principais</th>
+                            <th>Valores</th>
+                            <th></th> <!-- Coluna para o botão -->
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td>Site Estático (1-2 páginas)</td>
-                            <td>Ideal para landing pages, portfólios simples ou cartões de visita online.</td>
-                            <td>R$ 300,00</td>
+                            <td><strong>Básico</strong><br><small>(1-2 páginas)</small></td>
+                            <td>
+                                <ul>
+                                    <li>✅ Design Moderno e Responsivo</li>
+                                    <li>✅ Otimização SEO Inicial</li>
+                                    <li>✅ Formulário de Contato</li>
+                                    <li><small>Ideal para portfólios e landing pages.</small></li>
+                                </ul>
+                            </td>
+                            <td class="preco">R$ 300,00</td>
+                            <td><a href="contato.html" class="btn">Contratar</a></td>
+                        </tr>
+                        <tr class="plano-recomendado">
+                            <td><strong>Institucional</strong><br><small>(3-5 páginas)</small></td>
+                            <td>
+                                <ul>
+                                    <li>✅ Todos os recursos do Plano Básico</li>
+                                    <li>✅ Múltiplas Páginas (Sobre, Serviços)</li>
+                                    <li>✅ Integração com Google Maps</li>
+                                    <li><small>Perfeito para pequenas empresas.</small></li>
+                                </ul>
+                            </td>
+                            <td class="preco">R$ 650,00</td>
+                            <td><a href="contato.html" class="btn">Contratar</a></td>
                         </tr>
                         <tr>
-                            <td>Site Estático (3-5 páginas)</td>
-                            <td>Perfeito para sites institucionais de pequenas empresas, com páginas como Home, Sobre, Serviços e Contato.</td>
-                            <td>R$ 650,00</td>
+                            <td><strong>Avançado</strong><br><small>(+5 páginas)</small></td>
+                            <td>
+                                <ul>
+                                    <li>✅ Todos os recursos do Plano Institucional</li>
+                                    <li>✅ Seção de Blog/Notícias</li>
+                                    <li>✅ Galeria de Fotos/Vídeos</li>
+                                    <li><small>Para projetos com mais conteúdo.</small></li>
+                                </ul>
+                            </td>
+                            <td class="preco">R$ 1.000,00</td>
+                            <td><a href="contato.html" class="btn">Contratar</a></td>
+                        </tr>
+                         <tr>
+                            <td><strong>Dinâmico</strong><br><small>(Gerenciável)</small></td>
+                            <td>
+                                <ul>
+                                    <li>✅ Todos os recursos do Plano Avançado</li>
+                                    <li>✅ Painel Administrativo (CMS)</li>
+                                    <li>✅ Autonomia para atualizar conteúdo</li>
+                                    <li><small>Para quem precisa de atualizações constantes.</small></li>
+                                </ul>
+                            </td>
+                            <td class="preco">A partir de R$ 2.500,00</td>
+                            <td><a href="contato.html" class="btn">Contratar</a></td>
                         </tr>
                         <tr>
-                            <td>Site Estático (+5 páginas)</td>
-                            <td>Para projetos maiores que necessitam de mais páginas de conteúdo, como blogs ou catálogos.</td>
-                            <td>R$ 1.000,00</td>
-                        </tr>
-                        <tr>
-                            <td>Site Dinâmico</td>
-                            <td>Inclui painel administrativo para gerenciamento de conteúdo, ideal para blogs com atualizações constantes ou sistemas com login.</td>
-                            <td>R$ 2.500,00</td>
-                        </tr>
-                        <tr>
-                            <td>Site Super Avançado</td>
-                            <td>Soluções completas como e-commerce, sistemas de reserva, ou plataformas personalizadas com integrações.</td>
-                            <td>Sob Consulta</td>
+                            <td><strong>E-commerce</strong><br><small>(Sob Medida)</small></td>
+                            <td>
+                                <ul>
+                                    <li>✅ Loja Virtual Completa</li>
+                                    <li>✅ Integração com Pagamentos</li>
+                                    <li>✅ Sistemas de Reserva ou Login</li>
+                                    <li><small>Soluções robustas e personalizadas.</small></li>
+                                </ul>
+                            </td>
+                            <td class="preco">Sob Consulta</td>
+                            <td><a href="contato.html" class="btn">Consultar</a></td>
                         </tr>
                     </tbody>
                 </table>
-            </div>
-
-             <div class="cta-servicos">
-                <a href="contato.html" class="btn">Solicite um Orçamento</a>
             </div>
         </section>
     </main>
 </body>
 </html>
+
